@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: cornsilk;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.calc {
+    margin: 150px auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 558px;
+    height: 632px;
+    background-color: #1E1E1E;
+    border: 8px solid rgb(194, 194, 194);
+    border-radius: 40px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 145px;
+}
+
+.display__memo {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.display__exp {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.buttons__row {
+    display: flex;
+    gap: 4px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    background: #D4D0CC;
+    border-radius: 6px;
+}
+
+.btn:active .btn__rnd{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btn__eq {
+    width: 347px;
+    background: #D64627;
+}
+
+.btn__dot {
+    width: 145px;
+}
+
+.btn__rnd {
+    display: block;
+    width: 65px;
+    height: 65px;
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    border-radius: 50%;
+    line-height: 65px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), -6px -6px 11px rgba(255, 255, 255, 0.25), inset 2px 2px 3px -1px rgba(255, 255, 255, 0.18);
+    transition: all 0.1s ease-in-out;
+}
+
+.btn__rnd--eq {
+    width: 314px;
+    background: #D64627;
+    border-radius: 32px;
+}
+
+.btn__rnd--dot {
+    margin-left: 45px;
+    color: black;
+}
+
+.btn__rnd--c {
+    background: #D63127;
+    border: 2px solid #D3CFCB;
+}
+
+.btn__rnd--white {
+    color: black;
+}
+
+.btn--grey {
+    background: #80807E;
+}
+
+.btn__rnd--grey {
+    background: #80807E;
+}

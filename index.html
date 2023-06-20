@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc">
+        <div class="display">
+            <p class="display__memo" id="memo"></p>
+            <p class="display__exp" id="exp">0</p>
+        </div>
+        <div class="buttons">
+            <div class="buttons__row">
+                <button class="btn operator" data-operator="c">
+                    <span class="btn__rnd btn__rnd--c">C</span>
+                </button>
+                <button class="btn operator btn--grey" data-operator="x">
+                    <span class="btn__rnd btn__rnd--grey">×</span>
+                </button>
+                <button class="btn operator btn--grey" data-operator="-">
+                    <span class="btn__rnd btn__rnd--grey">-</span>
+                </button>
+                <button class="btn operator btn--grey" data-operator="+">
+                    <span class="btn__rnd btn__rnd--grey">+</span>
+                </button>
+                <button class="btn operator btn--grey" data-operator="/">
+                    <span class="btn__rnd btn__rnd--grey">÷</span>
+                </button>
+            </div>
+            <div class="buttons__row">
+                <button class="btn key" data-value="1">
+                    <span class="btn__rnd btn__rnd--white">1</span>
+                </button>
+                <button class="btn key" data-value="2">
+                    <span class="btn__rnd btn__rnd--white">2</span>
+                </button>
+                <button class="btn key" data-value="3">
+                    <span class="btn__rnd btn__rnd--white">3</span>
+                </button>
+                <button class="btn key" data-value="4">
+                    <span class="btn__rnd btn__rnd--white">4</span>
+                </button>
+                <button class="btn key" data-value="5">
+                    <span class="btn__rnd btn__rnd--white">5</span>
+                </button>
+            </div>
+            <div class="buttons__row">
+                <button class="btn key" data-value="6">
+                    <span class="btn__rnd btn__rnd--white">6</span>
+                </button>
+                <button class="btn key" data-value="7">
+                    <span class="btn__rnd btn__rnd--white">7</span>
+                </button>
+                <button class="btn key" data-value="8">
+                    <span class="btn__rnd btn__rnd--white">8</span>
+                </button>
+                <button class="btn key" data-value="9">
+                    <span class="btn__rnd btn__rnd--white">9</span>
+                </button>
+                <button class="btn key" data-value="0">
+                    <span class="btn__rnd btn__rnd--white">0</span>
+                </button>
+            </div>
+            <div class="buttons__row">
+                <button class="btn btn__eq" id="eq">
+                    <span class="btn__rnd btn__rnd--eq">=</span>
+                </button>
+                <button class="btn key btn__dot" data-value=".">
+                    <span class="btn__rnd btn__rnd--dot">.</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
